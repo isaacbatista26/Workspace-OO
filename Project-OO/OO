@@ -1,0 +1,66 @@
+Classe Universo:
+	Metodo criarForma()
+	Metodo criarPonto()
+	Metodo calcularArea()
+	Metodo calcularPerimetro()
+
+Metodo criarForma(altura, largura, raio, ponto)
+	
+
+Classe Forma herda Universo:
+	Método sobrepor()
+	Método crescer()
+	Método destruir()
+	Metodo repulsao()
+
+
+Metodo destruir(formaDestruir)
+	While forma existir:
+		retire todos os pontos dela
+
+Metodo crescer(formaQueCresce, valorAdicionado)
+	formaQueCresce += valorAdicionado	
+	
+Metodo repulsao(FormaUm, FormaDois)
+	empurra FormaUm e FormaDois para lados opostos
+
+Metodo sobrepor(FormaUm.ponto, FormaDois.ponto) 
+	if FormaUm.ponto sobrepor FormaDois.ponto
+		if FormaUm.ponto > FormaDois.ponto
+			crescer(FormaUm.ponto, FormaDois.ponto)
+			destruir(FormaDois.ponto)
+		if FormaDois.ponto < FormaUm.ponto
+			crescer(FormaDois.ponto, FormaUm.ponto)
+			destruir(FormaUm.ponto)
+		if FormaUm.ponto == FormaDois.ponto
+			repulsao(FormaUm.ponto, FormaDois.ponto)
+
+Objeto circulo da classe Forma
+// Atribuição de valores
+circulo.raio recebe raio
+circulo.ponto recebe 1
+
+
+Objeto retangulo da classe Forma
+
+// Atribuição de valores
+retangulo.altura recebe altura
+retangulo.largura recebe largura
+retangulo.ponto recebe 4
+
+
+Objeto quadrado da classe Forma
+
+// Atribuição de valores
+quadrado.altura recebe altura
+quadrado.largura recebe largura
+quadrado.ponto recebe 4
+
+
+Objeto triangulo da classe Forma
+
+// Atribuição de valores
+triangulo.altura recebe altura
+triangulo.largura recebe largura
+triangulo.ponto recebe 4
+
