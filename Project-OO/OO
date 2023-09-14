@@ -1,43 +1,60 @@
 Classe Forma:
-	Metodo area()
-	Metodo perimetro()
+	definir construtor
 
+	// as formas estao dentro da outra?
 
-Classe Ponto():
-	Metodo __init__(ponto, x, y):
-		ponto.x = x
-		ponto.y = y
+	Metodo Publico area()
+		retorna a area da forma geometrica
+	
+	Metodo Publico perimetro()
+		retorna a soma de todos os lados da forma geometrica
 
+fim Forma.
 
-Classe Linha herda Ponto():
-	Metodo __init__(linha, ponto1, ponto2):
-		linha.ponto1 = ponto1
-		linha.ponto2 = ponto2
+Classe Ponto:
+	definir construtor
 
-	Metodo comprimento(linha):
-		return distancia_entre_dois_pontos
+	Metodo Publico coordenada(x1, y1)
+		recebe as x1 e x2
+		entrega a coordenada do ponto
 
+	Metodo Publico distancia(ponto1, ponto2)
+		calcula a distancia entre dois pontos
+		retorna a distancia
 
-Classe Circulo herda Ponto(Ponto):
-	Metodo __init__(circulo, raio)	
-		circulo.raio = raio
+fim Ponto.
 
-	Metodo area(circulo):
-		return pi * raio * raio
+Classe Linha herda mixins_Ponto:
+	definir construtor linha(ponto1, ponto2)
+		
+	usa o metodo distancia(ponto1, ponto2) da Classe Ponto
 
+fim Linha.
 
-Classe Quadrado herda Ponto(x, y):
-	Metodo __init__(quadrado, lado):
-		quadrado.lado = lado
+Classe Circulo herda mixins_Forma, Ponto:
+	definir construtor(raio)
 
-	Metodo area(quadrado):
-		return quadrado.lado * quadrado.lado
+	definir estaNoCirculo()
+		coordenada(ponto_circulo, ponto)
+		calcula o raio do circulo
+		compara a coordenada do circulo com a coordenada do ponto
 
+	usa o metodo area(circulo) da Classe Forma 
+	usa o metodo perimetro(circulo) da Classe Forma 
 
-Classe Triangulo herda Ponto(x, y):
-	Metodo __init__(triangulo, base, altura):
-		triangulo.base = base
-		triangulo.altura = altura]
+fim Circulo.
 
-	Metodo area():
-		return (triangulo.base * triangulo.altura) * 0,5
+Classe Quadrado herda mixins Forma, Ponto:
+	definir construtor(lado):
+
+	usa o metodo area(quadrado) da Classe Forma
+	usa o metodo perimetro(quadrado) da Classe Forma
+
+fim Quadrado.
+
+Classe Triangulo herda mixins Forma, Ponto:
+	definir construtor triangulo(base, altura):
+
+	usa o metodo area(triangulo) da Classe Forma
+
+fim Triangulo.
