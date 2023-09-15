@@ -1,26 +1,22 @@
 Classe Forma:
 	definir construtor
 
-	// as formas estao dentro da outra?
-
 	Metodo Publico area()
-		retorna a area da forma geometrica
+		Implementar a formula para calcular a area da forma
+		Retornar a area calculada
 	
 	Metodo Publico perimetro()
-		retorna a soma de todos os lados da forma geometrica
+		Implementar a formula para calcular o perimetro da forma
+		Retorna o perimetro calculado
 
 fim Forma.
 
 Classe Ponto:
 	definir construtor
 
-	Metodo Publico coordenada(x1, y1)
-		recebe as x1 e x2
-		entrega a coordenada do ponto
-
-	Metodo Publico distancia(ponto1, ponto2)
-		calcula a distancia entre dois pontos
-		retorna a distancia
+	Metodo Publico distancia(ponto2)
+		Implementar o calculo da distancia entre este ponto e ponto2
+		Retornar a distancia calculada
 
 fim Ponto.
 
@@ -34,27 +30,27 @@ fim Linha.
 Classe Circulo herda mixins_Forma, Ponto:
 	definir construtor(raio)
 
-	definir estaNoCirculo()
-		coordenada(ponto_circulo, ponto)
-		calcula o raio do circulo
-		compara a coordenada do circulo com a coordenada do ponto
+	usa o metodo area(circulo) da Classe Forma para calcular a area do circulo 
+	usa o metodo perimetro(circulo) da Classe Forma para calcular o perimetro do circulo
 
-	usa o metodo area(circulo) da Classe Forma 
-	usa o metodo perimetro(circulo) da Classe Forma 
+	definir estaDentroDe(outraForma)
+        	Implementar a logica para verificar se esta forma esta dentro de outraForma
+	 	Retornar verdadeiro ou falso
 
 fim Circulo.
 
 Classe Quadrado herda mixins Forma, Ponto:
 	definir construtor(lado):
 
-	usa o metodo area(quadrado) da Classe Forma
-	usa o metodo perimetro(quadrado) da Classe Forma
+	usa o metodo area(quadrado) da Classe Forma para calcular a area do quadrado
+	usa o metodo perimetro(quadrado) da Classe Forma para calcular o perimetro do quadrado
+
 
 fim Quadrado.
 
 Classe Triangulo herda mixins Forma, Ponto:
-	definir construtor triangulo(base, altura):
+	definir construtor(base, altura):
 
-	usa o metodo area(triangulo) da Classe Forma
+	usa o metodo area(triangulo) da Classe Forma para calcular a area do triangulo
 
 fim Triangulo.
