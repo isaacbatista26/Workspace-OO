@@ -1,5 +1,5 @@
 Classe Forma:
-	definir construtor
+	Definir construtor forma(forma)
 
 	Metodo Publico area()
 		Implementar a formula para calcular a area da forma
@@ -9,11 +9,19 @@ Classe Forma:
 		Implementar a formula para calcular o perimetro da forma
 		Retorna o perimetro calculado
 
+	Metodo Publico desenhar(forma)
+        	Usar as informações da forma (posição, tamanho) para desenhá-la
+		Imprimir a forma no console
+
+	Metodo Publico estaDentroDe(outraForma)
+        	Implementar a logica para verificar se esta forma esta dentro de outraForma
+	 	Retornar verdadeiro ou falso
+
 fim Forma.
 
 Classe Ponto:
-	definir construtor
-
+	Definir construtor ponto(ponto)
+	
 	Metodo Publico distancia(ponto2)
 		Implementar o calculo da distancia entre este ponto e ponto2
 		Retornar a distancia calculada
@@ -21,36 +29,38 @@ Classe Ponto:
 fim Ponto.
 
 Classe Linha herda mixins_Ponto:
-	definir construtor linha(ponto1, ponto2)
-		
-	usa o metodo distancia(ponto1, ponto2) da Classe Ponto
+	Definir construtor linha(ponto1, ponto2)
 
+	Metodo Privado pontoMedio()
+		Implementar o calculo do ponto medio da linha
+		Retornar o ponto medio calculado
+
+	Aplicar o metodo "distancia(ponto1, ponto2)" da Classe Ponto para saber o tamanho da linha
+	
 fim Linha.
 
 Classe Circulo herda mixins_Forma, Ponto:
-	definir construtor(raio)
+	Definir construtor(raio)
 
-	usa o metodo area(circulo) da Classe Forma para calcular a area do circulo 
-	usa o metodo perimetro(circulo) da Classe Forma para calcular o perimetro do circulo
-
-	definir estaDentroDe(outraForma)
-        	Implementar a logica para verificar se esta forma esta dentro de outraForma
-	 	Retornar verdadeiro ou falso
+	Aplicar o metodo "area(circulo)" da Classe Forma para calcular a area do circulo 
+	Aplicar o metodo "perimetro(circulo)" da Classe Forma para calcular o perimetro do circulo
+	Aplicar o metodo "desenhar(circulo)" da Classe Forma para desenhar o circulo
 
 fim Circulo.
 
-Classe Quadrado herda mixins Forma, Ponto:
-	definir construtor(lado):
+Classe Quadrado herda mixins_Forma, Ponto:
+	Definir construtor(lado):
 
-	usa o metodo area(quadrado) da Classe Forma para calcular a area do quadrado
-	usa o metodo perimetro(quadrado) da Classe Forma para calcular o perimetro do quadrado
-
+	Aplicar o metodo "(quadrado)" da Classe Forma para calcular a area do quadrado
+	Aplicar o metodo "perimetro(quadrado)" da Classe Forma para calcular o perimetro do quadrado
+	Aplicar o metodo "desenhar(quadrado)" da Classe Forma para desenhar o quadrado
 
 fim Quadrado.
 
 Classe Triangulo herda mixins Forma, Ponto:
-	definir construtor(base, altura):
+	Definir construtor(base, altura):
 
-	usa o metodo area(triangulo) da Classe Forma para calcular a area do triangulo
+	Aplicar o metodo "area(triangulo)" da Classe Forma para calcular a area do triangulo
+	Aplicar o metodo "desenhar(triangulo)" da Classe Forma para desenhar o triangulo
 
 fim Triangulo.
