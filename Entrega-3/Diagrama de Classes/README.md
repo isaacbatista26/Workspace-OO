@@ -1,8 +1,7 @@
 # Detalhamento de requisitos e identificação de classes:
+        (1) Alteração Manual de Level: Permite ao jogador definir manualmente o nível de dificuldade antes do     início da partida, influenciando a velocidade de queda das peças.
 
-1 -	Alteração Manual de Level: Permite ao jogador definir manualmente o nível de dificuldade antes do início da partida, influenciando a velocidade de queda das peças.
-
-2 -	Visualização de Estatísticas e Próximas Peças: Durante a partida, o jogador pode acessar o menu de estatísticas e ver as próximas três peças que cairão.
+          2 -	Visualização de Estatísticas e Próximas Peças: Durante a partida, o jogador pode acessar o menu de estatísticas e ver as próximas três peças que cairão.
 
 3 -	Menu de Estatísticas Visível: O menu de estatísticas é exibido constantemente no canto inferior esquerdo da tela durante todo o jogo.
 
