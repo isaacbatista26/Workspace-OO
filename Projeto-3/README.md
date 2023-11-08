@@ -7,7 +7,7 @@ O Tetris é um clássico jogo de quebra-cabeça que desafia os jogadores a organ
 
 ### O Universo:
 
-- O jogo ocorre em um **Grid** de dimensões 20x10.
+- O jogo ocorre em um Grid de dimensões 20x10.
 - No início da rodada, as peças compostas por quatro quadrados menores caem do topo da tela.
 - O objetivo é criar linhas horizontais completas de blocos, para obter a maior pontuação possível.
 - A dificuldade do jogo aumenta gradualmente à medida que o número de pontos cresce.
@@ -47,4 +47,4 @@ Quando o jogador completa uma linha inteira horizontalmente no grid, eles recebe
  - `y` = quantidade de linhas completadas de uma vez.
  - `z` = quantidade de linhas consecutivas completadas a cada nova peça que cai.
 - À medida que o jogador pontua, ele avança de nível, e por consequência a velocidade de queda das peças aumenta, tornando o jogo mais desafiador.
-- Quando o jogador começa a empilhar peças de forma que uma delas chegue ao topo da tela e não possa ser visualizada, o jogo dá **Game Over**
+- Quando o jogador começa a empilhar peças de forma que uma delas chegue ao topo da tela e não possa ser visualizada, o jogo dá Game Over
