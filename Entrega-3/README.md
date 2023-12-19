@@ -7,7 +7,7 @@ O Tetris é um clássico jogo de quebra-cabeça que desafia os jogadores a organ
 
 ### O Universo:
 
-- O jogo ocorre em um Grid de dimensões 20x10.
+- O jogo ocorre em um Grid de dimensões 10x20.
 - No início da rodada, as peças compostas por quatro quadrados menores caem do topo da tela.
 - O objetivo é criar linhas horizontais completas de blocos, para obter a maior pontuação possível.
 - A dificuldade do jogo aumenta gradualmente à medida que o número de pontos cresce.
