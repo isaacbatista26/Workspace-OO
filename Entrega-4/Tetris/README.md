@@ -21,8 +21,6 @@ $ cd Workspace-OO/Entrega-4/Tetris/
 $ make run
 ```
 
-This is the project main branch. If you want to test the game on your localhost, please use the `play-tetris` branch.
-
 ## Technologies Used
 
 The project is built using the following major frameworks and libraries:
