@@ -8,14 +8,6 @@
 
 Note: You won't be able to run the project if you don't have access to the database.
 
-### Clone the project:
-```bash
-$ git clone https://github.com/isaacbatista26/tetris-puzzle.git
-```
-### Go to the project directory:
-```bash
-$ cd tetris-puzzle
-```
 ### Build and start the Docker containers:
 ```bash
 $ make run
