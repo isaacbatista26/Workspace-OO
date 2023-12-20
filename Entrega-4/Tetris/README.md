@@ -8,6 +8,14 @@
 
 Note: You won't be able to run the project if you don't have access to the database.
 
+### Clone the project:
+```bash
+$ git clone https://github.com/isaacbatista26/Workspace-OO.git
+```
+### Go to the project directory:
+```bash
+$ cd Workspace-OO/Entrega-4/Tetris/
+```
 ### Build and start the Docker containers:
 ```bash
 $ make run
